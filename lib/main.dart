@@ -13,7 +13,7 @@ void main() {
   runApp(const PlayNestApp());
 }
 
-/// Injectable API lets automated tests run offline using FakeToyApi.
+ 
 class PlayNestApp extends StatelessWidget {
   final ToyApi? toyApi;
   const PlayNestApp({super.key, this.toyApi});

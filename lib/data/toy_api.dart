@@ -6,10 +6,6 @@ abstract class ToyApi {
   Future<Toy> getToyById(int id);
 }
 
-/// Real HTTPS API: https://randomapi.dev/apis/products
-/// GET /api/products?category=toys&count=36&seed=42026&currency=USD
-/// The provider generates mock products; it does NOT support /toys/{id}.
-/// Detail lookup refetches the same reproducible list over HTTP and picks ID.
 class ToyApiImpl implements ToyApi {
   static const endpoint = 'https://randomapi.dev';
   static const int catalogSize = 36;
